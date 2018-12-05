@@ -20,6 +20,10 @@
   <script src="js/responsivevoice.js"></script>
   
 </head>
+<div class="container">
+  <ul id="quote-list" class="list-group">
+  </ul>
+</div>
 
 <body>
   
@@ -41,10 +45,10 @@
     </div>
   </nav>
   <main class="container">        
-    <form>
+    <form id="textform">
       <div class="form-group">
         <label for="textentry"> I'm your Accessibility Friend</label>
-        <input type="text" class="form-control" id="textentry" aria-describedby="text" placeholder="Add your text here">
+        <input type="text" name="textname" class="form-control" id="textentry" aria-describedby="text" placeholder="Add your text here">
       </div>
     
       <button type="submit" class="btn btn-primary">Submit</button>
@@ -59,13 +63,8 @@
         title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License">Non-Commercial License</a></div>
   </footer>
   <!-- built files will be auto injected -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-          // responsiveVoice.speak("Hello World");
-          console.log("DOM fully loaded and parsed");
-    });
-
-  </script>
+  
+    <script src="js/main.js"> </script>
 
 </body>
 
